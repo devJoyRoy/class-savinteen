@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.clair::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.min-width{
+  width: 1100px;
+  margin: auto;
+}
+/* bagian */
+body,h1,h2,h3,h4,h5,h6,p,span{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.hadear{
+  background-color: black;
+  height: 75px;
+}
+.hader-icon{width: 20%;padding: 6px 0px;}
+.hader-icon img{
+  width: 100px;
+  margin-top: 6px;
+}
+
+.hadear-menu{
+  width: 80%;
+}
+.hadear-menu ul {}
+.hadear-menu ul li{
+  display: inline-block;
+}
+.hadear-menu ul li a{
+  display: block;
+  color: white;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 75px;
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+}
+.hadear-menu ul li a::before{
+  content: "";
+  top: 49px;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: black;
+ transition: .4s;
+}
+.hadear-menu ul li:hover::before{
+ width: 100px;
+}
+
+
+.hadear-menu ul li:hover>a{
+ background-color: white;
+ color: black;
+}
+
+
+
+.hadear-menu ul li {
+  position: relative;
+}
+.hadear-menu ul li ul{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  background-color: black;
+  color: white;
+  text-align: left;
+  display: inline-block;
+  transition: .4s;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.hadear-menu ul li ul li{ 
+ display: block;
+}
+.hadear-menu ul li ul li a{
+  width: 128px;
+  height: 47px;
+  line-height: 47px;
+}
+.hadear-menu ul li:hover ul{ 
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+
+  
+}
+
+.banear{
+  background-image: url(a0c6042d4612d7adf44692fffac7e082.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 225px 0px;
+  background-size: cover;
+}
+.baner-text{}
+.baner-text h1{
+    font-size: 43px;
+    margin-top: -44px;
+    margin-bottom: 17px;
+}
+.baner-text p{
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+.banear-bottn{
+}
+
+.bottn{
+  width: 269px;
+  /* position: relative; */
+}
+.banear-bottn a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-right: 5px;
+    transition: .4s;
+    display: inline-block;
+}
+.banear-bottn a:hover{
+  background-color: white;
+  color: black;
+}
+
+.baner-contact{}
+.baner-contact a{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 14px 26px;
+  font-weight: 600;
+  margin-left: 5px;
+  transition: .4s;
+  display: inline-block;
+  border-radius: 8px;
+  /* position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px; */
+}
+.baner-contact a:hover{
+  background-color: black;
+  color: white;
+}
+
+/* About  */
+.About{
+  background-color: #87A471;
+}
+.About-had{
+}
+.About-had h1{padding: 14px;
+  border-bottom: 2px #dfdfdf solid;
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #e7e7e7;
+  font-size: 42px;
+  text-shadow: 1px 2px 5px white;
+}
+
+.About-cintent{
+  width: 54%;
+  margin-top: 65px;
+  margin-left: 31px;
+}
+.About-cintent p{
+    color: white;
+    line-height: 22px;
+}
+.About-image{
+  width: 36%;
+}
+.About-image img{
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+/* content */
+.content{ background-color: #606a64;}
+
+.content-hader{
+  color: white;
+}
+.content-hader h1{
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+    width: 231px;
+    display: inline-block;
+    padding-bottom: 6px;
+    font-size: 37px;
+    font-weight: 900;
+}
+.content-hader h3{
+    margin-top: 8px;
+    font-size: 26px;
+}
+.content-hader p{
+    width: 500px;
+    margin: auto;
+    margin-top: 22px;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.content-box{
+    margin-top: 48px;
+}
+.box-wid{
+    width: 29.3%;
+    background: white;
+    margin-left: 44px;
+    padding: 26px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+.box-icon {
+    width: 50px;
+    height: 110px;
+    float: left;
+}
+.box-icon span{
+    font-size: 34px;
+    color: #00BB9a;
+}
+.box-content{}
+.box-content h3{
+    font-size: 20px;
+    font-weight: 800;
+    color: #4a6984;
+}
+.box-content p{font-size: 16px;margin-top: 8px;line-height: 22px;
+color: #8fA0Af;
+}
+
+/* check */
+.check{
+  background-color: #87A471;
+}
+.check-text{color: white;margin-bottom: 72px;}
+.check-text h3{
+    padding-top: 45px;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+.check-text p{}
+.check-cont{
+    width: 48%;
+    border: 1px solid white;
+    margin-bottom: 36px;
+}
+.check-cont img{
+    width: 100%;
+}
+.check-cont h5{
+    padding: 9px;
+    color: #121265;
+    font-size: 14px;
+}
+.check-cont h6{
+    margin-bottom: 13px;
+    color: white;
+    font-size: 13px;
+}
+
+.check-image{}
+.imag{width: 24%;margin-right: 11px;margin-bottom: 50px;}
+.imag img{
+  width: 88%;
+  margin-right: -12px;
+}
+
+/* teams  */
+.teams {background-color: #5B9776;
+color: white;
+}
+.teams-head{}
+.teams-head h2{
+ font-size: 31px;
+ border-bottom: 2px solid white;
+ width: 295px;
+ display: inline-block;
+ margin-bottom: 27px;
+ padding-top: 13px;
+ padding-bottom: 3px;
+}
+.teams-box{
+    /* margin-bottom: 22px; */
+}
+.imagg{width: 33.3%;margin-left: 0px;}
+.imagg img{
+
+width: 84%;
+}
+.imagg ul{}
+.imagg ul li{ display: inline-block;}
+.imagg ul li a{
+  font-size: 40px;
+  color: wheat;
+  padding: 7px 3px;
+  display: block;
+  margin-bottom: 11px;
+  transition: .4s;
+}
+.imagg ul li a:hover{
+  color: yellow;
+}
+/* fotter */
+.fotter{background: #606A64;
+color: white;}
+
+.text-fotter{padding-top: 50px;padding-bottom: 38px;}
+.text-fotter h2{
+    margin-bottom: 15px;
+}
+.text-fotter p{
+    width: 726px;
+    margin: auto;
+    margin-bottom: 21px;
+}
+.text-fotter a{
+  background-color: #00BC9C;
+  text-decoration: none;
+  padding: 9px 17px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  transition: .4s;
+}
+.text-fotter a:hover{
+  background-color: white;
+  color: black;
+}
+
+/* fotter-bottn */
+
+.fotter-bottn{ background-color: black;}
+.bott{
+  padding: 10px 0;
+}
+.bott p{
+  color: white;
+}
